@@ -9,12 +9,9 @@ jobs:
     steps:
       - run: echo "Build artifact"
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - run: echo "Test Artifact"
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Deploy"
 
 
