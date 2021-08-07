@@ -1,0 +1,19 @@
+name: BPPR pipeline
+on: 
+  pull_request:
+    branches: [ $default-branch ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build artifact"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Test Artifact"
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Analyze code"
+
+
